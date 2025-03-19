@@ -1,10 +1,26 @@
-import React, { Fragment } from 'react'
+import  { Fragment } from 'react'
 
-interface props {
-    educations: string[]
-}
+interface Education {
+    dir: "left" | "right";
+    heading: string;
+    name: string;
+    startYear: number;
+    passingYear: number;
+    totalMarks: number;
+    obtainedMarks: number;
+    percentage: number;
+    location: string;
+    stream?: string;
+    degree?: string;
+    branch?: string;
+  }
+  
+  // Props Interface
+  interface EducationListProps {
+    educations: Education[];
+  }
 
-const Education = ({ educations }: props) => {
+const Education = ({ educations }: EducationListProps) => {
 
     return (
         <div className='flex flex-col gap-y-3 w-full my-4'>
@@ -38,7 +54,10 @@ const Education = ({ educations }: props) => {
     )
 }
 
-const Circle = ({year}:string) => {
+interface CircleProps {
+    year: number; // Ensure it's a number
+  }
+const Circle = ({year}:CircleProps) => {
     return <div className='relative flex justify-center items-center'><div className='rounded-full w-4 h-4 bg-gray-100 mx-auto'> </div><h1 className='font-bold text-white absolute left-[53%]'>{year}</h1></div>
 
 }
@@ -49,7 +68,7 @@ interface pillerArgs{
     end:number
 }
 
-const Piller = ({len=50,start,end}:pillerArgs) => {
+const Piller = ({len=50}:pillerArgs) => {
 return <div style={{height:`${len}px`}} className={`rounded-t-full rounded-b-full w-2  bg-gradient-to-b from-blue-500 to-purple-500 mx-auto min-h-24`}></div>
 }
 interface cardArgs {

@@ -1,11 +1,23 @@
-import React from 'react';
-import { FaReact, FaJs, FaCss3Alt, FaEnvelope } from "react-icons/fa";
+import { FaReact, FaJs, FaCss3Alt } from "react-icons/fa";
 import { GiBookCover } from "react-icons/gi";
-import Education from './Education';
+import EducationPage from './Education';
 
-
+interface Education {
+  dir: "left" | "right";
+  heading: string;
+  name: string;
+  startYear: number;
+  passingYear: number;
+  totalMarks: number;
+  obtainedMarks: number;
+  percentage: number;
+  location: string;
+  stream?: string; // Optional because it's not in all objects
+  degree?: string; // Optional because it's only in the last object
+  branch?: string; // Optional because it's only in the last object
+}
 const About = () => {
-  const educations = [
+  const educations:Education[] = [
     {
       dir: "left",
       heading: "School",
@@ -86,7 +98,7 @@ const About = () => {
           </div>
           <div className='lg:w-1/2'>
             {/* <img className='md:w-md w-md sm:w-sm  h-3/5' src='assets/avatar.png' /> */}
-            <Education educations={educations} />
+            <EducationPage educations={educations} />
           </div>
         </div>
       </div>

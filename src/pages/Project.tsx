@@ -1,8 +1,7 @@
-import React from 'react'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill, RiReactjsLine } from "react-icons/ri";
-import { SiSass, SiRedux } from "react-icons/si";
+import {  SiRedux } from "react-icons/si";
 import { IoLogoSass } from "react-icons/io";
 
 

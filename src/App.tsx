@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+// import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+// import { SiNextdotjs } from "react-icons/si";
 import './App.css'
 import Header from './Components/header';
 import Home from './pages/Home';
@@ -11,16 +10,16 @@ import Contact from './pages/Contact';
 import FloatingIcons from './Components/FloatingIcons';
 // import Education from './pages/Education';
 
-const icons = [
-  { id: 1, icon: <FaHtml5 color="#E34F26" />, size: "50px" },
-  { id: 2, icon: <FaCss3Alt color="#1572B6" />, size: "50px" },
-  { id: 3, icon: <FaJs color="#F7DF1E" />, size: "50px" },
-  { id: 4, icon: <FaReact color="#61DAFB" />, size: "50px" },
-  { id: 5, icon: <FaNodeJs color="#68A063" />, size: "50px" },
-  { id: 6, icon: <SiNextdotjs color="black" />, size: "50px" },
-  { id: 7, icon: <FaGitAlt color="#F05032" />, size: "50px" },
+// const icons = [
+//   { id: 1, icon: <FaHtml5 color="#E34F26" />, size: "50px" },
+//   { id: 2, icon: <FaCss3Alt color="#1572B6" />, size: "50px" },
+//   { id: 3, icon: <FaJs color="#F7DF1E" />, size: "50px" },
+//   { id: 4, icon: <FaReact color="#61DAFB" />, size: "50px" },
+//   { id: 5, icon: <FaNodeJs color="#68A063" />, size: "50px" },
+//   { id: 6, icon: <SiNextdotjs color="black" />, size: "50px" },
+//   { id: 7, icon: <FaGitAlt color="#F05032" />, size: "50px" },
 
-];
+// ];
 
 
 
