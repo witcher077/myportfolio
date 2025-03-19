@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+  /* --bg_color: #333333; */
+  --bg_color: #04152d;
+  --heading: #fff;
+  --Text: #f0ffff;
+  --header_Bg: #1e1d1d;
+}
+
+[page-theme="light"] {
+  --bg_color: #fffff0;
+  --heading: #000;
+  --Text: rgb(42, 41, 41);
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+.App{
+  background-color:var(--bg_color) ;
+
+}
+.page{
+  width: 100%; 
+  margin: 20px 0;
+ 
+}
+.nameProfession{
+  font-family: "Permanent Marker", cursive;
+
+}
+
+
+.gradient-bg {
+  display: grid;
+  padding: 8px 12px;
+  border-radius: 6px;
+  grid-template-columns: 1fr 9fr;
+  /* background: linear-gradient(90deg, #2E3842, #0B1422); */
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+.gradient-projects {
+  display: grid;
+  padding: 8px 12px;
+  border-radius: 6px;
+  grid-template-columns: 1fr 9fr;
+  background: linear-gradient(90deg, #18356A, #04152d);
+  color: white;
+  transition: background 0.3s ease-in-out;
+ 
+}
+/* .gradient-projects:hover{
+  background: linear-gradient(90deg,#04152d #18356A);
+
+} */
+
+.gradient-bg:hover {
+  background: linear-gradient(90deg,#2E3842, #0B1422 ); /* Reverse on hover */
+}
+
+.floating-icons-container {
+  position: fixed; /* Icons stay visible while scrolling */
+  top: 0;
+  left: 0;
+  /* width:100vw; */
+  height:100%;
+  pointer-events: none; /* Prevent icons from interfering with clicks */
+  z-index: -1; /* Keep them in the background */
+}
+
+.floating-icon {
+  position: absolute;
+  opacity: 0.7;
+}
