@@ -5,8 +5,8 @@ import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 const Home = () => {
 
     const links = [
-        { name: "LinkedIn", icon: <FaLinkedin />, link: "" },
-        { name: "GitHub", icon: <FaGithub />, link: "" },
+        { name: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/ashok-kumar-mahto/" },
+        { name: "GitHub", icon: <FaGithub />, link: "https://github.com/witcher077" },
         { name: "Instagram", icon: <FaInstagram />, link: "" },
         { name: "Facebook", icon: <FaFacebook />, link: "" },
     ];
@@ -14,7 +14,7 @@ const Home = () => {
    
     return (
         <div id='home' className='page pt-20'>
-            <div className='lg:w-4/5 flex lg:m-auto justify-between flex-col lg:flex-row mt-6 mx-4 items-center'>
+            <div className='lg:w-4/5 flex lg:m-auto justify-between flex-col lg:flex-row mt-6 mx-4 items-start'>
                 <div className='lg:w-1/2 flex flex-col items-center justify-center text-end'>
                     <span className=' text-white font-bold text-2xl'>Hi 👋 I'm <br />
                     </span>

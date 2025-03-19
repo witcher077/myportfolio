@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { FaLessThan } from "react-icons/fa";
 import { FaGreaterThan } from "react-icons/fa";
 import { RxSlash } from "react-icons/rx";
@@ -23,14 +23,19 @@ const Header = () => {
                     d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                 />
             </svg></button>
+            <label className="switch">
+                    <input type="checkbox" />
+                    <span className="slider"></span>
+                </label>
             <div className={`lg:bg-transparent bg-blue-300  rounded-bl-md px-7 ${isOpen ? "absolute top-0 right-0 block" : "hidden"} lg:block  sm:min-w-60`}>
                 <ul className='flex gap-7 lg:flex-row flex-col  my-5 lg:m-0'>
                     <li className="relative text-white text-xl group"><a href='#home'>Home</a><span className='absolute left-0 bottom-0 w-0 h-[4px] bg-amber-600 transition-all duration-300 group-hover:w-full'></span></li>
-                    <li  className='relative text-white text-xl group'><a href='#project'>project</a><span className='absolute left-0 bottom-0 w-0 h-[4px] bg-amber-600 transition-all duration-300 group-hover:w-full'></span></li>
+                    <li className='relative text-white text-xl group'><a href='#project'>project</a><span className='absolute left-0 bottom-0 w-0 h-[4px] bg-amber-600 transition-all duration-300 group-hover:w-full'></span></li>
                     <li className='relative text-white text-xl group'><a href='#experience'>Experience</a><span className='absolute left-0 bottom-0 w-0 h-[4px] bg-amber-600 transition-all duration-300 group-hover:w-full'></span></li>
                     <li className='relative text-white text-xl group'><a href='#about'>about</a><span className='absolute left-0 bottom-0 w-0 h-[4px] bg-amber-600 transition-all duration-300 group-hover:w-full'></span></li>
                     <li className='relative text-white text-xl group'><a href='#contact'>contact</a><span className='absolute left-0 bottom-0 w-0 h-[4px] bg-amber-600 transition-all duration-300 group-hover:w-full'></span></li>
                 </ul>
+                
             </div>
         </div>
     )

@@ -25,8 +25,8 @@ const About = () => {
       startYear: 2010,
       passingYear: 2015,
       totalMarks: 500,
-      obtainedMarks: 450,
-      percentage: 90,
+      obtainedMarks: 445,
+      percentage: 85,
       location: "Kanke ranchi JharKHand"
     },
     {
@@ -36,8 +36,8 @@ const About = () => {
       startYear: 2015,
       passingYear: 2017,
       totalMarks: 500,
-      obtainedMarks: 460,
-      percentage: 92,
+      obtainedMarks: 380,
+      percentage: 76,
       location: "Ranchi Jharkhand",
       stream: "Science (PCM)"
     },
@@ -49,10 +49,10 @@ const About = () => {
       passingYear: 2021,
       totalMarks: 4000,
       obtainedMarks: 3600,
-      percentage: 90,
+      percentage: 74,
       location: "RANCHI JHARKHAND",
       degree: "B.Tech",
-      branch: "Computer Science"
+      stream: "Computer Science"
     }
   ];
   return (

@@ -32,13 +32,13 @@ const Education = ({ educations }: EducationListProps) => {
                         <div className='grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto'>
                             {
                                 index % 2 !== 0 ?
-                                    (<Card len={(education.passingYear-education.startYear)*30} heading={education.heading} subHeading={education.name} />) :
+                                    (<Card len={(education.passingYear-education.startYear)*30} heading={education.heading} subHeading={education.name} sub={education.stream ? education.stream : ""} dir={education.dir} />) :
                                     <div></div>
                             }
                             <Piller start={education.startYear} end={education.passingYear} len={(education.passingYear-education.startYear)*30} />
                             {
                                 index % 2 === 0 ?
-                                    (<Card len={(education.passingYear-education.startYear)*30} heading={education.heading} subHeading={education.name} />) :
+                                    (<Card len={(education.passingYear-education.startYear)*30} heading={education.heading} subHeading={education.name} sub={education.stream ? education.stream : ""} dir={education.dir} />) :
                                     <div></div>
                             }
 
@@ -74,13 +74,18 @@ return <div style={{height:`${len}px`}} className={`rounded-t-full rounded-b-ful
 interface cardArgs {
     heading: string,
     subHeading: string,
-    len:number
+    len:number,
+    sub:string,
+    dir:string
 }
-const Card = ({len=50, heading, subHeading }: cardArgs) => {
+const Card = ({len=50, heading, subHeading,sub,dir }: cardArgs) => {
+console.log(sub);
 
-    return <div style={{height:`${len}px`, minHeight:"100px"}}  className='flex flex-col justify-center border shadow-md rounded-xl p-4 bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1]'>
-        <div className='text-Black font-bold text-large'>{heading}</div>
+    return <div style={{height:`${len}px`, minHeight:"100px"}}  className='flex flex-col justify-center border shadow-md rounded-xl p-4 bg-gradient-to-bl from-[#ffe4e6] to-[#ccfbf1] relative'>
+<div  className={`absolute w-0 h-0 border-l-8 border-l-transparent border-b-8 border-b-white border-r-8 border-r-transparent ${dir=="left"?'-left-3 rotate-270':'-right-3 rotate-90'} `}></div>        
+<div className='text-Black font-bold text-large'>{heading}</div>
         <div className='text-sm text-blue-600 font-bold'>{subHeading}</div>
+        <p className='italic text-xs text-blue-500'>{sub}</p>
     </div>
 }
 
