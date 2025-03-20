@@ -8,13 +8,18 @@
   --bg_color: #04152d;
   --heading: #fff;
   --Text: #f0ffff;
-  --header_Bg: #1e1d1d;
+  --header_Bg: #364153;
+  --boxBg_color:#090F19;
+
 }
 
 [data-theme="light"] {
   --bg_color: #fffff0;
   --heading: #000;
-  --Text: rgb(42, 41, 41);
+  --Text: #0f0f0f;
+  --boxBg_color:#7c7e80;
+  --header_Bg: #625d5d;
+
 }
 
 html{
@@ -24,7 +29,18 @@ html{
 
 .App{
   background-color:var(--bg_color) ;
+ 
 
+}
+.heading{
+  color:var(--heading) ;
+}
+.roundedBox{
+  background-color:var(--boxBg_color) ;
+
+}
+.header{
+  background-color: var(--header_Bg);
 }
 .page{
   width: 100%; 

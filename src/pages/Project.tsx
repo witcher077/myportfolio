@@ -98,7 +98,7 @@ const Projects = () => {
     return (
         <div id='project' className='page pt-20'>
             <div className='lg:w-4/5 lg:m-auto py-5 mx-4'>
-                <h1 className='text-white font-bold text-3xl'>Projects</h1>
+                <h1 className=' font-bold text-3xl heading'>Projects</h1>
                     <div className='  lg:px-8 mx-4 px-0 py-5 grid lg:grid-cols-3 sm:grid-cols-2  gap-4'>
                         {
                             ProjectList.map((project) =><div

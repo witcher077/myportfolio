@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <div id='experience' className='page pt-20'>
       <div className='lg:w-4/5 lg:m-auto mx-4  lg:px-10 px-2 py-5'>
-        <h1 className='text-white font-bold text-3xl'>Experience</h1>
+        <h1 className='heading font-bold text-3xl'>Experience</h1>
         <div className=' flex justify-between lg:flex-row flex-col gap-6'>
           <div className=' lg:w-1/2  py-5 grid justify-between grid-cols-[repeat(auto-fill,minmax(100px,1fr))] lg:gap-4 gap-10'>
             <div className='flex flex-col items-center justify-center'>

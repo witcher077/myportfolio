@@ -44,7 +44,7 @@ export default function ContactForm() {
 
   return (
     <div id="contact" className=" flex justify-center p-4">
-      <div className="w-full max-w-6xl  bg-[#132B50] text-white rounded-2xl py-6">
+      <div className="w-full max-w-6xl roundedBox  bg-[#132B50] text-white rounded-2xl py-6">
         {/* Left Column - Contact Info */}
         <h2 className="text-4xl font-bold text-center">Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
