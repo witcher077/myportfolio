@@ -60,7 +60,10 @@ const About = () => {
       <div className=' roundedBox rounded-3xl lg:w-4/5 mx-2 lg:mx-auto md:px-10 px-4 py-5'>
         <h1 className='text-white font-bold text-3xl'>About Me</h1>
         <div className="flex flex-col lg:flex-row gap-4 items-start pt-6">
-         
+        <div className='lg:w-1/2'>
+            {/* <img className='md:w-md w-md sm:w-sm  h-3/5' src='assets/avatar.png' /> */}
+            <EducationPage educations={educations} />
+          </div>
           <div className='lg:w-1/2 grid'>
             <div className="gradient-bg  justify-center items-center gap-5 px-4 py-2 rounded-lg">
               <GiBookCover size={50} />
@@ -96,10 +99,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='lg:w-1/2'>
-            {/* <img className='md:w-md w-md sm:w-sm  h-3/5' src='assets/avatar.png' /> */}
-            <EducationPage educations={educations} />
-          </div>
+         
         </div>
       </div>
     </section>
