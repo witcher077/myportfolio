@@ -1,5 +1,4 @@
-// import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-// import { SiNextdotjs } from "react-icons/si";
+
 import './App.css'
 import Header from './Components/header';
 import Home from './pages/Home';
@@ -8,6 +7,7 @@ import Experience from './pages/Experience';
 import Projects from './pages/Project';
 import Contact from './pages/Contact';
 import FloatingIcons from './Components/FloatingIcons';
+// import { ThemeProvider } from "./Context/themeContext"
 // import Education from './pages/Education';
 
 // const icons = [
@@ -24,10 +24,11 @@ import FloatingIcons from './Components/FloatingIcons';
 
 
 function App() {
-  
+
   return (
-    <div className='App'>
-      {/* {icons.map((item) => (
+    // <ThemeProvider>
+      <div className='App'>
+        {/* {icons.map((item) => (
         <motion.div
           key={item.id}
           className="floating-icon"
@@ -46,7 +47,7 @@ function App() {
           {item.icon}
         </motion.div>
       ))} */}
-{/* <BrowserRouter>
+        {/* <BrowserRouter>
 
 
 <Routes>
@@ -55,19 +56,19 @@ function App() {
   <Route/>
 </Routes>
 </BrowserRouter> */}
-<FloatingIcons/>
-<Header/>
-<Home/>
-<About/>
-<Experience/>
-<Projects/>
-{/* <Education educations={educations}/> */}
-<Contact/>
+        <FloatingIcons />
+        <Header />
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+        {/* <Education educations={educations}/> */}
+        <Contact />
 
 
 
 
-    </div>
+      </div>
   )
 }
 

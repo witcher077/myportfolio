@@ -56,7 +56,7 @@ const About = () => {
     }
   ];
   return (
-    <section id='about' className='page mt-5 pt-20'>
+    <section id='about' className='page mt-5 pt-0'>
       <div className='bg-[#090F19] rounded-3xl lg:w-4/5 mx-2 lg:mx-auto md:px-10 px-4 py-5'>
         <h1 className='text-white font-bold text-3xl'>About Me</h1>
         <div className="flex flex-col lg:flex-row gap-4 items-start pt-6">

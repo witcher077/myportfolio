@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-:root {
+
+[data-theme="dark"] {
   /* --bg_color: #333333; */
   --bg_color: #04152d;
   --heading: #fff;
@@ -9,7 +11,7 @@
   --header_Bg: #1e1d1d;
 }
 
-[page-theme="light"] {
+[data-theme="light"] {
   --bg_color: #fffff0;
   --heading: #000;
   --Text: rgb(42, 41, 41);
